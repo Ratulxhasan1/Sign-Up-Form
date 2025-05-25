@@ -27,14 +27,15 @@
 }
 .email{
     margin-top: 60px;
-    margin-right: 430px;
+   
     margin-bottom: 9px;
    font-size: 20px;
 
 }
+
 .pass{
       margin-top: 60px;
-    margin-right: 390px;
+    
     margin-bottom: 9px;
    font-size: 20px;
 }
@@ -174,55 +175,87 @@ input[type="email"]{
     text-decoration: none;
     color:  rgb(255, 145, 0);
   }
+@media screen and (max-width: 992px) {
+  input,
+  button {
+    width: 90%;
+  }
 
-@media screen and (max-width:600px) {
-    .icons{
-        flex-direction: column;
-        gap: 15px;
-    }
-    .icons img{
-        width: 40px;
-        height: 40px;
-    }
-    .btn{
-        font-size: 14px;
-        padding: 10px;
-    }
-    .remember,
-    .forgot{
-        display: block;
-        text-align: left;
-        margin: 10px 0;
+  .checkbox {
+    margin-right: auto;
+  }
 
-    }
-    .line2{
-        width: 100%;
-        margin-left: 0;
-    }
-    .or-text{
-        font-size: 20px;
-    }
+  .remember {
+    margin-right: auto;
+    padding-left: 28px;
+  }
 
+  .forgot {
+    margin-left: auto;
+    padding-right: 28px;
+  }
+
+  .line,
+  .line2 {
+    width: 40%;
+    margin: 20px auto;
+  }
+
+  .signup,
+  .dontHaveAnAccount {
+    margin: 10px auto 0;
+    text-align: center;
+  }
 }
-@media screen and (min-width: 370px) and (max-width:599px) {
-    .icons{
-        justify-content: center;
-        align-items: center;
-        flex-direction: row;
 
-    }
-    .line2{
-        width: 70%;
-        margin-left: 435px;
-        /* margin-right: auto; */
-    }
-  
+@media screen and (max-width: 600px) {
+  .sign-in {
+    font-size: 26px;
+    margin-left: 0;
+  }
+
+  .welcome {
+    font-size: 16px;
+    text-align: center;
+  }
+
+  input,
+  button {
+    width: 100%;
+    font-size: 16px;
+  }
+
+  .checkbox {
+    margin-right: 0;
+  }
+
+  .remember,
+  .forgot {
+    text-align: left;
+    margin: 10px 0;
+    padding: 0;
+  }
+
+  .line,
+  .line2 {
+    width: 100%;
+    margin: 15px 0;
+  }
+ .or-text {
+    margin: 0 auto 15px;
+    text-align: center;
+  }
+
+  .icons {
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .dontHaveAnAccount,
+  .signup {
+    text-align: center;
+  margin: 10px auto 0;
+  }
 }
-/* @media screen and (min-width:599px) {
-    .welcome{
-        text-align: center;
-        word-wrap: break-word;
-        max-width: 100%;
-    }
 
-} */
+
